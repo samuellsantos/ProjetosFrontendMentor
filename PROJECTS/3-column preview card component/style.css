@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    max-width: 350px;
+    height: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    flex-direction: column;
+    color: #fff;   
+}
+.card:nth-child(1){
+    border-radius: 10px 0px 0px 10px;
+}
+.card:nth-child(3){
+    border-radius: 0px 10px 10px 0px;
+}
+.card .car{
+    width: 60px;
+    height: auto;
+    margin-bottom: 40px;
+    align-self: flex-start;
+}
+.card h1{
+    font-family: 'Big Shoulders Display', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-weight: 700;
+    align-self: flex-start;
+}
+.card p{
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 30px;
+    font-weight: 400;
+    margin-bottom: 80px;
+    justify-self: baseline;
+}
+.card a{
+    display: inline-block;
+    align-self: flex-start;
+    background-color: #fff;
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 5px 3px 10px rgba(0, 0, 0, 0.247);
+    transition: .5s;
+}
+.card a:hover{
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.orange{
+    background: hsl(31, 77%, 52%);
+}
+.orange a{
+    color: hsl(31, 77%, 52%);
+}
+
+.blue{
+    background: hsl(184, 100%, 22%);
+}
+.blue a{
+    color: hsl(184, 100%, 22%);
+}
+.green{
+    background:hsl(179, 100%, 13%)
+}
+.green a{
+    color: hsl(179, 100%, 13%);
+}
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERY */
+@media only screen and (max-width:1200px){
+    .card{
+        max-width: 250px;
+        padding: 30px; 
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .container{
+        padding-top: 800px;
+        padding-bottom: 300px;
+        flex-direction: column;
+        overflow: scroll;
+    }
+    .card{
+        max-width: 250px;
+        padding: 30px; 
+    }
+    .card:nth-child(1){
+        border-radius: 10px 10px 0 0;
+    }
+    .card:nth-child(3){
+        border-radius: 0px 0 10px 10px ;
+    }
+}
