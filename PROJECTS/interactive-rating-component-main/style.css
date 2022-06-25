@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(216, 12%, 8%);
+}
+
+main{
+    background-color: hsl(213, 19%, 18%);
+    width: 403px;
+    height: 360px;
+    padding: 30px;
+    border-radius: 30px;
+}
+#star{
+    background-color: hsl(219, 20%, 17%);
+    padding: 7px;
+    border-radius: 50%;
+    width: 35px;
+}
+.content h2{
+    color: #fff;
+    margin-top: 10px;
+    font-size: 2em;
+    font-weight: 700;
+}
+.content p{
+    color: hsl(217, 12%, 63%);
+    margin-top: 10px;
+    font-weight: 400;
+    text-align: justify;
+}
+.rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.rating input{
+    outline: none;
+    border: none;
+    background-color: hsl(219, 20%, 17%);
+    padding: 15px;
+    color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+
+.rating input:hover{
+    transition: .5s;
+    background-color: hsl(217, 12%, 63%);
+}
+main .submit{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+main .submit input{
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 15px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 30px;
+    background-color: hsl(25, 97%, 53%);
+    color: #fff;
+    transition: .5s;
+    cursor: pointer;
+}
+main .submit input:hover{
+    background-color: #fff;
+    color: hsl(25, 97%, 53%);
+}
+
+
+
+
+
+
+
+
+
+.thanks{
+    display: none;
+    background-color: hsl(213, 19%, 18%);
+    width: 403px;
+    height: 360px;
+    padding: 30px;
+    border-radius: 30px; 
+    text-align: center;
+
+}
+.thanks h2{
+    color: #fff;
+    margin-top: 30px;
+    font-size: 2em;
+    font-weight: 700;
+}
+.thanks img {
+    width: 130px;
+    margin-bottom: 30px;
+}
+.thanks span{
+    background-color: hsl(219, 20%, 17%);
+    color: hsl(25, 97%, 53%);
+    padding: 10px 25px;
+    border-radius: 30px;
+
+}
+.thanks p{
+    color: hsl(217, 12%, 63%);
+    margin-top: 10px;
+    font-weight: 400;
+    text-align: center;
+}
