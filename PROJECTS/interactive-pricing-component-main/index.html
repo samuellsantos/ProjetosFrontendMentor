@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://kit.fontawesome.com/e29fd8182b.js" crossorigin="anonymous"></script>
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+<body>
+  <img src="images/bg-pattern.svg">
+    <div class="container">
+      <div class="informations">
+        <h1>
+          Simple, traffic-based pricing
+        </h1>
+        <span>
+          Sign-up for our 30-day trial. No credit card required.
+        </span>
+      </div>
+
+      <div class="box">
+        <header>
+          <span>
+            100k Pageviews
+          </span>
+          <p>
+            <span>$16.00</span>/month
+          </p>
+        </header>
+
+        <main>
+          <input type="range" min="8" max="20" value="3" class="myrange">
+          <div class="activate-option">
+            <span>Monthly Billing</span>
+            <div class="toggle-btn"></div>
+            <span>Yearly Billing</span>
+            <span id="discount">25% discount</span>
+          </div>
+        </main>
+
+        <footer>
+          <div class="benefits">
+            <div class="list-benefits">
+              <ul>
+                <li><i class="fa-solid fa-check"></i> Unlimited websites</li>
+                <li><i class="fa-solid fa-check"></i> 100% data ownership</li>
+                <li><i class="fa-solid fa-check"></i>Email reports</li>
+              </ul>
+            </div>
+
+            <div class="button">
+              <a href="#">Start my trial</a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+</body>
+</html>
