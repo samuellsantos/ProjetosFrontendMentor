@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>interactive-card-details-form-main</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="front-card">
+        <img src="images/card-logo.svg">
+        <div class="number-card">
+          <p>
+            0000 0000 0000 0000
+          </p>
+        </div>
+        <div class="footer-card">
+          <h1 id="name">
+            Jane Aplessed
+          </h1>
+          <span id="due-date">00/00</span>
+        </div>
+      </div>
+      <div class="back-card">
+        <img src="images/bg-card-back.png">
+      </div>
+    </div>
+    <div class="right">
+      <div class="register">
+        <form>
+          <div class="name">
+            <label for="name">Cardholder Name</label> <br>
+            <input type="text" id="name" placeholder="e.g Jane Aplessed" minlength="8" maxlength="20">
+          </div>
+
+          <div class="card-number">
+            <label for="name">Card Number</label> <br>
+            <input type="number" id="name" placeholder="e.g 1324 5678 9123 0000" min="8" max="16">
+          </div>
+
+
+
+          <label for="data">Exp.date (mm/yy)</label> <label style="margin-left: 80px;" for="cvc">CVC</label>
+
+          <div class="date">
+            <div class="mm-yy">
+              <input type="number" name="data" id="data" placeholder="MM" max="31">
+              <input type="number" name="data" id="data" placeholder="YY" max="2022" min="1980">
+            </div>
+ 
+            <div class="cvc">
+              <input type="number" name="cvc" id="cvc" placeholder="e.g. 123">
+            </div>
+          </div>
+
+
+          <button>Confirm</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

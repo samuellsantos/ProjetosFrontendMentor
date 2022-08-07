@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .left{
+    width: 30%;
+    height: 100vh;
+    background-image: url(images/bg-main-desktop.png);
+    background-size: cover;
+    position: relative;
+}
+.container .left .front-card{
+    background-image: url(images/bg-card-front.png);
+    width: 447px;
+    height: 240px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 50px;
+    color: #fff;
+    position: absolute;
+    right: -115px;
+    top: 200px;
+}
+.container .left .front-card .number-card{
+    margin-top: 50px;
+    font-size: 1.8em;
+    letter-spacing: 3px;
+}
+.container .left .front-card .footer-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .left .front-card .footer-card #name{
+    font-weight: 500;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+.container .left .back-card{
+    position: absolute;
+    top: 480px;
+    right: -250px;
+}
+
+
+.container .right{
+    position: relative;
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    top: 30%;
+}
+.container .right .register form{
+    width: 380px;
+    height: 65px;
+}
+.container .right .register form label{
+    text-transform: uppercase;
+    color: hsl(278, 68%, 11%);
+    font-size: .9em;
+    letter-spacing: 3px;
+}
+.container .right .register form input{
+    width: 100%;
+    height: 60px;
+    border: 1px solid hsl(270, 3%, 87%);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;    
+}
+.container .right .register form input::placeholder{
+    opacity: .4;
+}
+.date{
+    display: flex;
+}
+.date input{
+    width: 30% !important;
+}
+.date .cvc input{
+    width: 100% !important;
+}
+
+
+button{
+    background-color: hsl(278, 68%, 11%);
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
